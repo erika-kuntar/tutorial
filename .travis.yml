@@ -4,4 +4,4 @@ rvm:
   - 2.5.3
 
 notifications:
-  - email: erika@travis-ci.org
+  email: erika@travis-ci.org
