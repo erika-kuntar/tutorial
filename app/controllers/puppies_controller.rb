@@ -10,6 +10,7 @@ class PuppiesController < ApplicationController
   # GET /puppies/1
   # GET /puppies/1.json
   def show
+    @puppy = Puppy.find(params[:id])
   end
 
   # GET /puppies/new
@@ -69,6 +70,6 @@ class PuppiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def puppy_params
-      params.require(:puppy).permit(:breed, :love)
+      params.require(:puppy).permit(:breed, :love, :image_file, :number_of_puppies)
     end
 end

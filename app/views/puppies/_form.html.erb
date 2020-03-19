@@ -21,6 +21,16 @@
     <%= form.number_field :love %>
   </div>
 
+  <div class="field">
+    <%= form.label :image_file %>
+    <%= form.text_field :image_file, size: "5", placeholder: "GIF, JPG or PNG file name" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number_of_puppies %>
+    <%= form.number_field :number_of_puppies %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

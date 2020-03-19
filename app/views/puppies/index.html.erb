@@ -2,8 +2,6 @@
 
 <h1>Puppies</h1>
 
-<%=image_tag 'travis/app/assets/images/fluffpup.png'%>
-
 <table>
   <thead>
     <tr>
@@ -18,6 +16,8 @@
       <tr>
         <td><%= puppy.breed %></td>
         <td><%= puppy.love %></td>
+        <td><%= image_tag puppy.image_file %></td>
+        <td><%= pluralize(puppy.number_of_puppies, 'puppy') %></td>
         <td><%= link_to 'Show', puppy %></td>
         <td><%= link_to 'Edit', edit_puppy_path(puppy) %></td>
         <td><%= link_to 'Destroy', puppy, method: :delete, data: { confirm: 'Are you sure?' } %></td>

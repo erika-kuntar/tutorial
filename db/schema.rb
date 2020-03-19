@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_16_005145) do
+ActiveRecord::Schema.define(version: 2020_03_19_021202) do
 
   create_table "puppies", force: :cascade do |t|
     t.string "breed"
     t.integer "love"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image_file", default: ""
+    t.integer "number_of_puppies"
   end
 
 end

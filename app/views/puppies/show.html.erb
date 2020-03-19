@@ -10,5 +10,15 @@
   <%= @puppy.love %>
 </p>
 
+<p>
+  <strong>Number of Puppies:</strong>
+  <%= @puppy.number_of_puppies %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag(@puppy.image_file) %>
+</p>
+
 <%= link_to 'Edit', edit_puppy_path(@puppy) %> |
 <%= link_to 'Back', puppies_path %>
