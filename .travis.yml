@@ -7,3 +7,11 @@ notifications:
   slack:
     secure: LrQY/e319WN80ZgGC2KXEtRI3kIoU2Ng+4HkLP1X6nBLFMGV5SjRasqwdP12oVittydj1Rl+7CBAa3cVvRQ3LbtyLXOLskRvG/o+IPyWUwxjHr2VUDWSf4aNYlXa98ddNGx+Y2TPEXMQEacg/WynbT8/zBKlpfB+8uCpkAHfU3E3qCM5MTaV6aTkDKi0/mf8SiR+j6qgLh9lnIq5S89y9KyWAkGUV0/KG5t6gRiOR/wNzYyLseXxVk+FKe5Ep5WwGyis0YCcFeiWDKTw3+Mr/I4HYxwii5vAcQLkBEqZ99LPHAxpJVbBc76HnQ12dCH6xu4POcNJMx9Jins9g/yezKHYMBIeRo4fEJOysAijjWSXpWDZvdF3leQo23K9PRI1HzPFwDUlFWPDIEtl2+j3jC4lnNcYAcy8JJ65iTwNjdm6de1wZ6amMTGs8npfc0jRN3Eu6Vg+2bKlHvJmHWKsWrdX6+Lt2EXiqmg2aBBkgI7cZCk021a+BJ+dHprLJQ3u9y5CMGnES3quwUAZfdCgFn2zuxiz7i6uMHumU2TaDUIcjYDeraLKqxxyR2ja12oTIY24jBBUlbSct7tPVqylVCq2TR4WONdPsY/kPmEsOQ5zWfD19gMBFSHVzBm4zRJDoLGc+6Bo3qYwYqRjXx2pznqDDyidsujsiN5rm2FD3Pg=
   email: erika@travis-ci.org
+
+  # deploy:
+  #   provider: pages
+  #   skip_cleanup: true
+  #   github_token: $GITHUB_TOKEN
+  #   keep_history: true
+  #   on:
+  #     branch: master
