@@ -6,8 +6,9 @@ rvm:
 jobs:
   include:
     - stage: Testy testy boom bam
+    if:commit_message = "auto updating docs"
     - script: echo "Running unit tests (1)"
-    "if": "commit_message = \"auto updating docs\""
+
 #   -exclude:
 #     # - script: echo "Running unit tests (2)"
 #     - stage: automation
