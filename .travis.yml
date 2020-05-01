@@ -11,7 +11,7 @@ jobs:
     - stage: "Tests"
       if: commit_message != "Auto updating docs"
       script:
-      - echo "commit message is  Auto updating docs"
+      - echo "commit message is Auto updating docs"
 
     - stage: "Automation"
       if: commit_message = "Run automation suite"
