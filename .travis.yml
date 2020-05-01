@@ -3,17 +3,17 @@ language: ruby
 rvm:
 - 2.5.3
 
-jobs:
-  include:
-    - stage: Testy testy boom bam
-    if: commit_message = "auto updating docs"
-
-    - script: echo "Running unit tests (1)"
-  -exclude:
-    # - script: echo "Running unit tests (2)"
-    - stage: automation
-    if: commit_message = "run automation suite"
-      script: echo "Deploying to GitHub releases ..."
+# jobs:
+#   include:
+#     - stage: Testy testy boom bam
+#     if: commit_message = "auto updating docs"
+#
+#     - script: echo "Running unit tests (1)"
+#   -exclude:
+#     # - script: echo "Running unit tests (2)"
+#     - stage: automation
+#     if: commit_message = "run automation suite"
+#       script: echo "Deploying to GitHub releases ..."
 
 notifications:
   slack:
