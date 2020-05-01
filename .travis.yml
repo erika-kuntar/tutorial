@@ -6,10 +6,6 @@ rvm:
 os:
   - linux
 
-before_script:
-  script:
-    echo "before"
-
 jobs:
   include:
     - stage: "Tests"
