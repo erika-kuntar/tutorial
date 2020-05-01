@@ -3,12 +3,11 @@ language: ruby
 rvm:
 - 2.5.3
 
-# jobs:
-#   include:
-#     - stage: Testy testy boom bam
-#     if: commit_message = "auto updating docs"
-#
-#     - script: echo "Running unit tests (1)"
+jobs:
+  include:
+    if: commit_message = "auto updating docs"
+    - stage: Testy testy boom bam
+    - script: echo "Running unit tests (1)"
 #   -exclude:
 #     # - script: echo "Running unit tests (2)"
 #     - stage: automation
