@@ -3,11 +3,26 @@ language: ruby
 rvm:
 - 2.5.3
 
+os:
+  - linux
+
 jobs:
   include:
-    - stage: Testy testy boom bam
-    - if: commit_message = auto updating docs
-    - script: echo "Running unit tests (1)"
+    - stage: "Tests"
+      if: commit_message != "first commit"
+      script:
+      - echo "commit message is not first commit"
+
+    - stage: "Automation"
+      if: commit_message = "Run lola run"
+      script:
+      - echo "commit message is run lola run"
+
+# jobs:
+#   include:
+#     - stage: Testy testy boom bam
+#     - if: commit_message = auto updating docs
+#     - script: echo "Running unit tests (1)"
 
 #   -exclude:
 #     # - script: echo "Running unit tests (2)"
