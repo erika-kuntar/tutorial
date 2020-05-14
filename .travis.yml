@@ -17,7 +17,7 @@ jobs:
       if: commit_message = "extending timeout"
       script:
       - echo "timeout extending now"
-      - sleep 3m
+      - sleep 6m
       - echo "sleep completed"
 
 # jobs:
