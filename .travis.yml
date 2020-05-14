@@ -18,7 +18,7 @@ jobs:
       script:
       - echo "timeout extending now"
       - sleep 6m
-      - echo "sleep completed, how fun!!!"
+      - echo "whatever sleep completed, how fun!!!"
 
 # jobs:
 #   include:
