@@ -9,16 +9,14 @@ os:
 jobs:
   include:
     - stage: "Tests"
-     # if: commit_message != "Auto updating docs"
+      if: commit_message != "Auto updating docs"
       script:
-      - echo "tests stage has run"
+      - echo hi ther
 
     - stage: "Automation"
-      if: commit_message = "extending timeout"
+      if: commit_message = "testing wait command"
       script:
-      - echo "timeout extending now"
-      - sleep 3m
-      - echo "sleep completed"
+      - echo "commit message is run automation suite"
 
 # jobs:
 #   include:
