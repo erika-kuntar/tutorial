@@ -14,7 +14,7 @@ jobs:
       - echo "tests stage has run"
 
     - stage: "Second stage"
-     # if: commit_message = "extending timeout"
+     # if: commit_message = "changing this file extending timeout"
       script:
       - echo "timeout extending now"
       - sleep 6m
