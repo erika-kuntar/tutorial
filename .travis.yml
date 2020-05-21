@@ -13,8 +13,8 @@ jobs:
       script:
       - echo "tests stage has run"
 
-    - stage: "Automation"
-      if: commit_message = "extending timeout"
+    - stage: "Second stage"
+     # if: commit_message = "extending timeout"
       script:
       - echo "timeout extending now"
       - sleep 6m
