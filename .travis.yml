@@ -25,7 +25,7 @@ jobs:
 #     - stage: Testy testy boom bam
 #     - if: commit_message = auto updating docs
 #     - script: echo "Running unit tests (1)"
-# test line
+# test linnne
 
 #   -exclude:
 #     # - script: echo "Running unit tests (2)"
